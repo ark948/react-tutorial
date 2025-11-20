@@ -28,7 +28,7 @@ function Profile() {
 function MyButton() {
   return (
     <button className='btn'>I'm a button</button>
-  )
+  );
 }
 
 const Status = () => {
@@ -42,7 +42,33 @@ const Status = () => {
     <div>
       {content}
     </div>
-  )
+  );
+}
+
+const StatusCompact = () => {
+  let isLoggedIn = true;
+  return (
+    <>
+      {isLoggedIn ? "Logged in" : "Not logged in"}
+    </>
+  );
+}
+
+function AdminPanel() {
+  return (
+    <>
+      <h4>This is admin panel</h4>
+    </>
+  );
+}
+
+const StatusMoreCompact = () => {
+  let isLoggedIn = true;
+  return (
+    <div>
+        {isLoggedIn && <AdminPanel />}
+    </div>
+  );
 }
 
 function App() {
@@ -52,8 +78,10 @@ function App() {
       <Profile />
       <MyButton />
       <Status />
+      <StatusCompact />
+      <StatusMoreCompact />
     </>
-  )
+  );
 }
 
 export default App
