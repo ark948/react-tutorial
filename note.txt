@@ -4,3 +4,5 @@ cd into <projectFolder>
 
 
 It is a rule that React components must always start with a capital letter.
+
+in jsx files, we can use {} to escape back to js code.
