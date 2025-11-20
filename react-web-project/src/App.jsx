@@ -28,12 +28,16 @@ function Profile() {
         }}
       />
     </>
-  )
+  );
 }
 
 function MyButton() {
+  function handleClick() {
+    console.log("Button was just clicked.");
+  }
+
   return (
-    <button className='btn'>I'm a button</button>
+    <button className='btn' onClick={handleClick}>I'm a button</button>
   );
 }
 
