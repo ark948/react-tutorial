@@ -9,9 +9,9 @@ const user = {
 };
 
 const products = [
-  { title: 'Cabbage', id: 1 },
-  { title: 'Garlic', id: 2 },
-  { title: 'Apple', id: 3 },
+  { title: 'Cabbage', isFruit: false, id: 1 },
+  { title: 'Garlic', isFruit: false, id: 2 },
+  { title: 'Apple', isFruit: true, id: 3 },
 ];
 
 function Profile() {
@@ -80,7 +80,7 @@ const StatusMoreCompact = () => {
 function App() {
   // we'll use the array map function to convert a list of products to an array of li items
   const litsItems = products.map(product => 
-    <li key={product.id}>
+    <li key={product.id} style={{color: product.isFruit ? 'magenta' : 'darkgreen'}}>
       {product.id}: {product.title}
     </li>
   );

@@ -6,3 +6,7 @@ cd into <projectFolder>
 It is a rule that React components must always start with a capital letter.
 
 in jsx files, we can use {} to escape back to js code.
+
+if you're rendering a list of items, make sure each item has a key attribute
+(just like without list of products items that we converted to li)
+react uses this key to know what happens to each item
