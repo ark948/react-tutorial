@@ -8,6 +8,12 @@ const user = {
   imageSize: 90,
 };
 
+const products = [
+  { title: 'Cabbage', id: 1 },
+  { title: 'Garlic', id: 2 },
+  { title: 'Apple', id: 3 },
+];
+
 function Profile() {
   return (
     <>
@@ -72,6 +78,12 @@ const StatusMoreCompact = () => {
 }
 
 function App() {
+  // we'll use the array map function to convert a list of products to an array of li items
+  const litsItems = products.map(product => 
+    <li key={product.id}>
+      {product.id}: {product.title}
+    </li>
+  );
   return (
     <>
       <h1>Welcome to my app</h1>
@@ -80,6 +92,9 @@ function App() {
       <Status />
       <StatusCompact />
       <StatusMoreCompact />
+      <ul>
+        {litsItems}
+      </ul>
     </>
   );
 }
