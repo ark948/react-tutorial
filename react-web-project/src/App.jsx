@@ -95,13 +95,26 @@ const StatusMoreCompact = () => {
   );
 }
 
+function MyButton3({ count, onClick }) {
+  return (
+    <button className='btn' onClick={onClick}>
+      Clicked {count} times.
+    </button>
+  );
+}
+
 function App() {
+  const [count, setCount] = useState(0);
   // we'll use the array map function to convert a list of products to an array of li items
   const litsItems = products.map(product => 
     <li key={product.id} style={{color: product.isFruit ? 'magenta' : 'darkgreen'}}>
       {product.id}: {product.title}
     </li>
   );
+
+  function handleClick() {
+    setCount(count + 1);
+  }
   return (
     <>
       <h1>Welcome to my app</h1>
@@ -111,6 +124,10 @@ function App() {
       <StatusCompact />
       <StatusMoreCompact />
       <MyButton2 />
+      <MyButton2 />
+
+      <MyButton3 count={count} onClick={handleClick} />
+      <MyButton3 count={count} onClick={handleClick} />
       <ul>
         {litsItems}
       </ul>
