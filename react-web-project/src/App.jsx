@@ -46,6 +46,15 @@ function MyButton() {
   );
 }
 
+const MyButton2 = () => {
+  const [count, setCount] = useState(0);
+  return (
+    <button onClick={() => setCount(count + 1)}>
+        Clicked {count} times.
+    </button>
+  );
+}
+
 const Status = () => {
   let content;
   if (isLoggedIn) {
@@ -101,6 +110,7 @@ function App() {
       <Status />
       <StatusCompact />
       <StatusMoreCompact />
+      <MyButton2 />
       <ul>
         {litsItems}
       </ul>
