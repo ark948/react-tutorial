@@ -10,3 +10,6 @@ in jsx files, we can use {} to escape back to js code.
 if you're rendering a list of items, make sure each item has a key attribute
 (just like without list of products items that we converted to li)
 react uses this key to know what happens to each item
+
+sometimes we need to remember some information about something and display it.
+react offers state for this purpose. (useState hook)

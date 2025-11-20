@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css'
 
 let isLoggedIn = false;
@@ -32,12 +33,16 @@ function Profile() {
 }
 
 function MyButton() {
+  const [count, setCount] = useState(0);
+
   function handleClick() {
-    console.log("Button was just clicked.");
+    setCount(count + 1);
   }
 
   return (
-    <button className='btn' onClick={handleClick}>I'm a button</button>
+    <button className='btn' onClick={handleClick}>
+      Clicked {count} times.
+    </button>
   );
 }
 
