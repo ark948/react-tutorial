@@ -1,3 +1,7 @@
-export default function Square() {
-    return <button className="square">x</button>;
+export default function App() {
+    return (
+        <div>
+            <h1>Hello in React</h1>
+        </div>
+    )
 }
