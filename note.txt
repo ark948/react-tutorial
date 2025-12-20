@@ -16,3 +16,4 @@ react offers state for this purpose. (useState hook)
 
 
 - following react official doc, Tic-Tac-Toe
+Simple game of Tic-Tac-Toe
