@@ -22,3 +22,5 @@ Simple game of Tic-Tac-Toe
 
 to collect data from multiple children, or to have two child components communicate with each other, declare the shared state in their parent component instead.
 (this is called lifting state up to parent component)
+
+when the state of a component is changed, it will trigger a re-render of that component
