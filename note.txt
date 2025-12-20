@@ -19,3 +19,6 @@ react offers state for this purpose. (useState hook)
 Simple game of Tic-Tac-Toe
 
 (components use state to remember things)
+
+to collect data from multiple children, or to have two child components communicate with each other, declare the shared state in their parent component instead.
+(this is called lifting state up to parent component)
