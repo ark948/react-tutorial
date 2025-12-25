@@ -24,3 +24,5 @@ to collect data from multiple children, or to have two child components communic
 (this is called lifting state up to parent component)
 
 when the state of a component is changed, it will trigger a re-render of that component
+
+In React, it’s conventional to use onSomething names for props which represent events and handleSomething for the function definitions which handle those events.
