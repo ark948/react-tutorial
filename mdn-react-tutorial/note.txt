@@ -1,3 +1,9 @@
 > npm create vite@latest <projectName> -- --template react
 > cd <projectName>
 > npm install
+
+1. JS expressions as content
+use curly braces to include javascript expressions inside in jsx.
+
+2. component props
+means of passing data into react components

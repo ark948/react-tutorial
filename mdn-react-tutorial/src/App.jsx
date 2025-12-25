@@ -1,12 +1,14 @@
 import './App.css'
 
 const subject = "React";
-function App() {
+function App(props) {
+  console.log(props); // {subject: 'Clarice'}
+  console.log(props.subject); // Clarice
   return (
     <>
       <header>
         <h1>Hello, {subject}.</h1>
-        {/* Hello, React :)! */}
+        {/* Hello, React :)! How you doing?*/}
         <h1>Hello, {`${subject} :)`}!</h1>
         {/* Hello, REACT */}
         <h1>Hello, {subject.toUpperCase()}</h1>
