@@ -26,3 +26,6 @@ to collect data from multiple children, or to have two child components communic
 when the state of a component is changed, it will trigger a re-render of that component
 
 In React, it’s conventional to use onSomething names for props which represent events and handleSomething for the function definitions which handle those events.
+
+React official doc has the tic-tac-toe project.
+MDN Web Docs also has a react tutorial
